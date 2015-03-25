@@ -1,0 +1,47 @@
+//DO NOT MODIFY  sha testing file|ZTEST|||||||1
+
+	/*
+	ORIG:	Sha Mirza, 2010-02-13
+	DESC:	
+
+	----------- Comments --------------------------------------------------
+
+
+	----------- Revision History ------------------------------------------
+	2010-02-13, Sha Mirza, ???
+		* 
+	
+	*/	
+	
+private run( String txt)
+
+	quit
+	
+
+public void run1()
+	
+	type ResultSet rs = Db.select("TJD","CUVAR")	
+	
+	write "Run executed "
+	
+	quit
+	
+	
+	
+public static void run()
+	
+	type ResultSet rs = Db.select("TJD","CUVAR")	
+	
+	write "run static executed"
+	
+	quit
+	
+	
+
+public static void testDselect(String column, String table)
+
+        type ResultSet rs = Db.select( column, table)
+                
+        quit
+
+	
