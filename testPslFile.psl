@@ -1,0 +1,43 @@
+	/*
+	 ORIG: Sha Mirza
+	 DESC: SQL Testing utility
+
+	---- Comments ----------------------------------------------------------
+	
+
+	---- Revision History --------------------------------------------------
+	2010-08-10, Sha Mirza, PRFFWK-???
+	2011-01-05, Sha Mirza
+		* Removed quit for rdb
+	*/
+	#PACKAGE utgood
+      	#CLASSDEF extends=PslUtTestSuite public
+
+
+public void run1()
+	
+	type ResultSet rs = Db.select("TJD","CUVAR")	
+	
+	write "Run executed "
+	
+	quit
+	
+public static void run()
+	
+	type ResultSet rs = Db.select("TJD","CUVAR")	
+	
+	write "run static executed"
+	
+	quit
+	
+	
+
+public static void testDselect(String column, String table)
+
+        type ResultSet rs = Db.select( column, table)
+                
+        quit
+
+
+
+	
